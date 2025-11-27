@@ -1,0 +1,91 @@
+body {
+    background: #0d0d0d;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding-top: 80px;
+}
+/* Full screen centered layout */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: #0d0d0d;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+/* Success Heading */
+h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 10px rgba(142, 45, 226, 0.6);
+}
+
+/* Back Button */
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 14px 32px;
+    background: linear-gradient(135deg, #4a00e0, #8e2de2);
+    color: white;
+
+    font-size: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+
+    box-shadow: 0 0 12px rgba(142, 45, 226, 0.7);
+    transition: 0.3s ease-in-out;
+
+    transform: translateY(0);
+}
+
+/* Hover Effect */
+.back-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 0 20px rgba(142, 45, 226, 1);
+}
+
+/* Icon inside button */
+.back-btn i {
+    font-size: 22px;
+    color: white;
+}
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #4a00e0, #8e2de2);
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 0 10px rgba(142, 45, 226, 0.7);
+    transition: 0.3s ease;
+}
+
+.back-btn:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 0 18px rgba(142, 45, 226, 1);
+}
+
+.back-btn i {
+    font-size: 22px;
+    color: white;
+}

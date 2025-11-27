@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Available Soon</title>
+<link rel="shortcut icon" href="images/samir passport size.png" type="image/x-icon">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #0a1a3b, #0e4c92, #1e88e5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      color: white;
+      padding: 40px 60px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+      animation: glow 2s infinite alternate;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #e0e7ff;
+      margin-bottom: 25px;
+    }
+
+    /* Go Back Button */
+    .back-btn {
+      display: inline-block;
+      padding: 12px 30px;
+      background: rgba(255, 255, 255, 0.10);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-radius: 50px;
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: 0.3s ease;
+      backdrop-filter: blur(6px);
+    }
+
+    .back-btn:hover {
+      background: rgba(255, 255, 255, 0.25);
+      transform: scale(1.08);
+      border-color: white;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #90caf9; }
+      to   { text-shadow: 0 0 35px #e3f2fd; }
+    }
+
+    /* Floating blue circles */
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+      animation: float 6s infinite ease-in-out;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0) scale(1); }
+      50% { transform: translateY(-20px) scale(1.1); }
+      100% { transform: translateY(0) scale(1); }
+    }
+
+    .c1 { width: 180px; height: 180px; top: 10%; left: 10%; }
+    .c2 { width: 250px; height: 250px; bottom: 15%; right: 12%; animation-duration: 8s; }
+  </style>
+</head>
+
+<body>
+
+  <div class="circle c1"></div>
+  <div class="circle c2"></div>
+
+  <div class="container">
+    <h1>Available Soon</h1>
+    <p>I am working hard to live this site. Stay tuned!</p>
+
+    <a href="index.html" class="back-btn">Go Back</a>
+  </div>
+
+</body>
+</html>
